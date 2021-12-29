@@ -1,5 +1,9 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -12,10 +16,11 @@ import pages_ClassHomework.LoginPage;
 import pages_ClassHomework.LogoutPage;
 import pages_ClassHomework.PaymentPage;
 import pages_ClassHomework.UserDashboard;
+import utilities.CommonMethods;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class Homework_POM {
+public class Homework_POM extends CommonMethods{
 
 //	1. navigate to https://phptravels.com/demo
 //		2. click and navigate to 'Agent Front-End' Page
@@ -88,7 +93,7 @@ public class Homework_POM {
 			String expectResult = "Pay Now";
 			String actualResult = DB.payNowBtn.getText();
 			
-			Assert.assertEquals(expectResult, actualResult);
+			AssertJUnit.assertEquals(expectResult, actualResult);
             
 			DB.payNowBtn.click();
 			
@@ -105,7 +110,7 @@ public class Homework_POM {
 			String expectResultLogInText = "Login";
 			String actualResultLogInText = loginPage.loginText.getText();
 			
-			Assert.assertEquals(expectResultLogInText, actualResultLogInText);
+			AssertJUnit.assertEquals(expectResultLogInText, actualResultLogInText);
 		} 
 
 }

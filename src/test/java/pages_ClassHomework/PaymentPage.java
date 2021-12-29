@@ -1,4 +1,4 @@
-package pages_ClassHomework;
+ package pages_ClassHomework;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,7 +26,7 @@ public class PaymentPage {
 
 		backBtn.click();
 		
-	}
+	} 
 	
 	
 	

@@ -29,7 +29,13 @@ public class UserDashboard {
 
 	public WebElement payNowText;
 	
+////////////OrangeHRM/////////////
+	
+	@FindBy(id = "welcome")
 
+	public WebElement welcomeText;
+	
+	
 	
 	public void click() {
 

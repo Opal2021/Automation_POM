@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ConfigurationReader {
-
+	
 	private static Properties testDataFile;
 
 	static {
@@ -22,7 +22,7 @@ public class ConfigurationReader {
 			input.close();
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 
 		}
 	}

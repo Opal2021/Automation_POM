@@ -17,7 +17,10 @@ public class Driver {
 //	private Driver() {
 //		
 //	}
-	private static WebDriver driver;
+	//private static WebDriver driver;
+	
+	
+	public static WebDriver driver;
 	
 	public static WebDriver getDriver() {
 		if (driver == null) {
@@ -28,6 +31,7 @@ public class Driver {
 				driver = new ChromeDriver();
 				driver.get(ConfigurationReader.getProperty("url"));
 				driver.manage().window().maximize();
+				PageInitializer.initialize();
 				break;
 			case "chrome-headless":
 				WebDriverManager.chromedriver().setup();
