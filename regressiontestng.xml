@@ -10,12 +10,12 @@
          </run>
       </groups>
    <classes>
-      <class name="testCases.OpenBrowers"/>
+      <!-- <class name="testCases.OpenBrowers"/> -->
       <class name="testCases.OrangeHRM"/>
-      <class name="testCases.Homework_Amazon"/>
+      <!-- <class name="testCases.Homework_Amazon"/>
       <class name="testCases.AmazonSearchUsingPOM"/>
       <class name="testCases.Homework_POM"/>
-      <class name="testCases.TestNG_Anotation"/>
+      <class name="testCases.TestNG_Anotation"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
